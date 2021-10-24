@@ -1,4 +1,6 @@
-import { LOADING, SUCCESS, ERROR, ADD_SMURF } from "../actions/index";
+// I'm not sure what this getDefaultNormalizer is but maybe I need it
+import { getDefaultNormalizer } from "@testing-library/react";
+import { LOADING, SUCCESS, ERROR, ADD_SMURF, ERROR_MESSAGE } from "../actions/index";
 
 export const initialState = {
     
@@ -7,7 +9,7 @@ export const initialState = {
     error: ''
 }
 
-const reducer = (state = initialState, action)=>{
+export const reducer = (state = initialState, action)=>{
     console.log(initialState);
     switch(action.type){
         case LOADING:
