@@ -60,11 +60,14 @@ In this project, you will build the reducer, actions and basic redux connects ne
 
   * [-] Add a standard action that allows us to set the value of the error message slice of state. (lines 24-26)
   
+
 ### Complete App.js
   Connect component to the fetchSmurfs action.
   
-  * [ ] Connect the fetchSmurfs actions to the App component.
-  * [ ] Call the fetchSmurfs action when the component first loads.
+  * [-] Connect the fetchSmurfs actions to the App component. (line 11)
+  * [-] Call the fetchSmurfs action when the component first loads. (lines 11, 13-19, 34)  
+  ??? still confused by this ???
+
 
 ### Complete components/SmurfList.js
   Connect this component to your smurfs and loading screen state slices.
@@ -72,6 +75,7 @@ In this project, you will build the reducer, actions and basic redux connects ne
   * [ ] Connect the smurfs and loading state values to the SmurfList component.
   * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
   * [ ] Replace the static isLoading variable with the state loading variable.
+
 
 ### Complete components/AddForm.js
   Connect this component to the error state slice, setError and addSmurf actions. Complete the form handling code.
