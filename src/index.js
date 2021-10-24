@@ -13,8 +13,9 @@ import { reducer } from './reducers/index';
 const { worker } = require('./mocks/browser');
 worker.start();
 
-const store = createStore(reducer, applyMiddleware(thunk, logger));
 
+// ??? IDK why yet this isn't connectiong my store
+const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 // const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
