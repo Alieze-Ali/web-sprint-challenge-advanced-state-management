@@ -15,31 +15,36 @@ You are not allowed to collaborate during the sprint challenge.
 In this challenge, you are to build a Smurfs village database utilizing Redux as your state management system. Build this challenge from the ground up using what you have learned about state management.
 
 ## Project Setup
-* [ ] Run npm install to install your dependencies.
-* [ ] Run npm start to run your frontend and backend code automatically.
-* [ ] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
+* [-] Run npm install to install your dependencies.
+* [-] Run npm start to run your frontend and backend code automatically.
+* [-] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers. - cool
 
 ## Project Instructions
 
-In this project, you will build the reducer, actions and basic redux connects nessiary to display smurf data. You will be implementing both thunk and traditional redux actions.
+In this project, you will build the reducer, actions and basic redux connects necessary to display smurf data. You will be implementing both thunk and traditional redux actions.
 
  
 ## Project Requirements
 
 #### Complete reducers/index.js
-  Add in the needed state and reducer cases to hold and modify smurf error messages, loading status and smurf data. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as nessisary.**
+  Add in the needed state and reducer cases to hold and modify smurf error messages, loading status and smurf data. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as necessary.**
 
-  * [ ] Adds the following state values into the initialState:
-      - an array of smurfs
-      - a boolean indicating if the app is loading
-      - a string indicating a possible error message
+  * [-] Adds the following state values into the initialState:
+      - an array of smurfs, -ok
+      - a boolean indicating if the app is loading, ok
+      - a string indicating a possible error message, ok
 
-  * [ ] Add in the arguments needed to complete a standard reducer function.
-  * [ ] Add in a reducer case to accommodate the start of a smurf fetch.
-  * [ ] Add in a reducer case to accommodate the successful smurf api fetch.
-  * [ ] Add in a reducer cases to accommodate an error.
-  * [ ] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list.
-  * [ ] Add in a reducer case that adds in a value to the error message.
+  * [-] Add in the arguments needed to complete a standard reducer function. (line 9)
+
+  * [-] Add in a reducer case to accommodate the start of a smurf fetch. -LOADING (lines 12-17)
+
+  * [-] Add in a reducer case to accommodate the successful smurf api fetch. -SUCCESS (Lines 18-23)
+
+  * [-] Add in a reducer cases to accommodate an error. -ERROR (Lines 24-29)
+
+  * [-] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list. -ADD_SMURF(Lines 30-35)
+
+  * [-] Add in a reducer case that adds in a value to the error message. ERROR_MESSAGE(lines 36-41)
 
 ### Complete index.js
   Connect your application to reducer through redux with the thunk and logger middleware packages attached.
