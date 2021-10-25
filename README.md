@@ -65,6 +65,7 @@ In this project, you will build the reducer, actions and basic redux connects ne
   Connect component to the fetchSmurfs action.
   
   * [-] Connect the fetchSmurfs actions to the App component. (line 11)
+
   * [-] Call the fetchSmurfs action when the component first loads. (lines 11, 13-19, 34)  
   ??? still confused by this ???
 
@@ -72,18 +73,23 @@ In this project, you will build the reducer, actions and basic redux connects ne
 ### Complete components/SmurfList.js
   Connect this component to your smurfs and loading screen state slices.
   
-  * [ ] Connect the smurfs and loading state values to the SmurfList component.
-  * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
-  * [ ] Replace the static isLoading variable with the state loading variable.
+  * [-] Connect the smurfs and loading state values to the SmurfList component. (lines 3, 27-31, 35)
+
+  * [-] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list. (lines 20-22)
+
+  * [-] Replace the static isLoading variable with the state loading variable. (line 15)
 
 
 ### Complete components/AddForm.js
   Connect this component to the error state slice, setError and addSmurf actions. Complete the form handling code.
 
-  * [ ] Connect your error state slice, setError and addSmurf actions to the AddForm component.
-  * [ ] Replace all instances of the errorMessage static variable with your error message state slice. 
-  * [ ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails.
-  * [ ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
+  * [-] Connect your error state slice, setError and addSmurf actions to the AddForm component. (lines 2-3, 57-63)
+
+  * [-] Replace all instances of the errorMessage static variable with your error message state slice. (line 27, 54) 
+
+  * [?] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails. ??? I dont think this is happening (line 27)
+
+  * [-] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted. (line 29)
 
 ## Important Notes:
 
